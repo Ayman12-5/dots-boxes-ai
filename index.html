@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dots and Boxes AI</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+
+  <body>
+    <h1>Dots and Boxes</h1>
+
+    <div class="game-info">
+      <p>Player Score: <span id="playerScore">0</span></p>
+      <p>AI Score: <span id="aiScore">0</span></p>
+      <p id="turnIndicator">Player Turn</p>
+    </div>
+
+    <div class="controls">
+      <button onclick="newGame()">New Game</button>
+    </div>
+
+    <div id="board"></div>
+    <div id="gameResult" class="result-popup">
+      <div class="result-box">
+        <h2 id="resultText"></h2>
+
+        <button onclick="newGame()">Play Again</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
